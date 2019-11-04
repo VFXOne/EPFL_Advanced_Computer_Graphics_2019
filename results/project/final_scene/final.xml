@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<scene>
+	<integrator type="path_ems"/>
+
+	<camera type="perspective">
+		<float name="fov" value="27.7856"/>
+		<transform name="toWorld">
+			<scale value="-1,1,1"/>
+			<lookat target="0, 0.893051, 4.41198" origin="0, 0.919769, 5.41159" up="0, 1, 0"/>
+		</transform>
+
+		<integer name="height" value="600"/>
+		<integer name="width" value="800"/>
+	</camera>
+
+	<sampler type="stratified">
+		<integer name="sampleCount" value="2048"/>
+	</sampler>
+
+	<mesh type="obj">
+		<string name="filename" value="meshes/background_wall.obj"/>
+
+		<bsdf type="diffuse">
+			<string name="texture_filename" value="textures/background_wall_texture.jpg"/>
+			<string name="normal_filename" value="normals/background_wall_normal.jpg"/>
+		</bsdf>
+	</mesh>
+
+	<mesh type="obj">
+		<string name="filename" value="meshes/floor.obj"/>
+
+		<bsdf type="diffuse">
+			<string name="texture_filename" value="textures/floor_texture.jpg"/>
+			<string name="normal_filename" value="normals/floor_normal.jpg"/>
+		</bsdf>
+	</mesh>
+
+	<mesh type="obj">
+		<string name="filename" value="meshes/ceiling.obj"/>
+
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.1 0.1 0.1"/>
+		</bsdf>
+	</mesh>
+
+	<mesh type="obj">
+		<string name="filename" value="meshes/table.obj"/>
+
+		<bsdf type="diffuse">
+			<string name="texture_filename" value="textures/black_marble.jpg"/>
+		</bsdf>
+	</mesh>
+
+	<mesh type="obj">
+		<string name="filename" value="meshes/wand_holder.obj"/>
+
+		<bsdf type="diffuse">
+			<string name="texture_filename" value="textures/metal_texture.jpg"/>
+		</bsdf>
+	</mesh>
+
+	<mesh type="obj">
+		<string name="filename" value="meshes/wand.obj"/>
+
+		<bsdf type="diffuse">
+			<string name="texture_filename" value="textures/wand_texture.jpeg"/>
+			<string name="normal_filename" value="normals/wand_normal.jpeg"/>
+		</bsdf>
+	</mesh>
+
+	<mesh type="obj">
+		<string name="filename" value="meshes/cloth.obj"/>
+
+		<bsdf type="diffuse">
+			<string name="texture_filename" value="textures/fabric_red_texture.png"/>
+				<string name="normal_filename" value="normals/fabric_normal.jpeg"/>
+		</bsdf>
+	</mesh>
+
+	<mesh type="obj">
+		<string name="filename" value="meshes/stone_holder.obj"/>
+
+		<bsdf type="diffuse">
+			<string name="texture_filename" value="textures/metal_texture.jpg"/>
+		</bsdf>
+	</mesh>
+
+	<mesh type="obj">
+		<string name="filename" value="meshes/stone.obj"/>
+
+		<bsdf type="diffuse">
+			<string name="texture_filename" value="textures/stone_texture.jpg"/>
+		</bsdf>
+	</mesh>
+
+	<mesh type="obj">
+		<string name="filename" value="meshes/light_1.obj"/>
+
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.1 0.1 0.1"/>
+		</bsdf>
+	</mesh>
+
+	<mesh type="obj">
+		<string name="filename" value="meshes/light_2.obj"/>
+
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.1 0.1 0.1"/>
+		</bsdf>
+	</mesh>
+
+	<mesh type="obj">
+		<string name="filename" value="meshes/light_3.obj"/>
+
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.1 0.1 0.1"/>
+		</bsdf>
+	</mesh>
+
+	<mesh type="obj">
+		<string name="filename" value="meshes/light_wire_1.obj"/>
+
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.2 0.2 0.2"/>
+		</bsdf>
+	</mesh>
+
+	<mesh type="obj">
+		<string name="filename" value="meshes/light_wire_2.obj"/>
+
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.2 0.2 0.2"/>
+		</bsdf>
+	</mesh>
+
+	<mesh type="obj">
+		<string name="filename" value="meshes/light_wire_3.obj"/>
+
+		<bsdf type="diffuse">
+			<color name="albedo" value="0.2 0.2 0.2"/>
+		</bsdf>
+	</mesh>
+
+	<mesh type="obj">
+		<string name="filename" value="meshes/light_bulb_1.obj"/>
+
+		<emitter type="area">
+			<color name="radiance" value="50 50 50"/>
+		</emitter>
+	</mesh>
+
+	<mesh type="obj">
+		<string name="filename" value="meshes/light_bulb_2.obj"/>
+
+		<emitter type="area">
+			<color name="radiance" value="50 50 50"/>
+		</emitter>
+	</mesh>
+
+	<mesh type="obj">
+		<string name="filename" value="meshes/light_bulb_3.obj"/>
+
+		<emitter type="area">
+			<color name="radiance" value="50 50 50"/>
+		</emitter>
+	</mesh>
+
+	<!--<mesh type="obj">
+		<string name="filename" value="meshes/area.obj"/>
+
+		<emitter type="area">
+			<color name="radiance" value="10 10 10"/>
+		</emitter>
+	</mesh>-->
+</scene>

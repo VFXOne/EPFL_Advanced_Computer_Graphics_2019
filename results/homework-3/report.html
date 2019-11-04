@@ -1,0 +1,129 @@
+**Homework 3**
+
+Student name: Virginie Piskin
+
+Sciper number: 300542
+
+Disclaimer
+=============================
+I updated the repo on Saturday but the homework 4 was out, therefore I am experiencing issues with the build on Travis:
+Passed 6 / 11 tests.
+Failed tests:
+	pa4/tests/test-mesh.xml
+	pa4/tests/test-mesh-furnace.xml
+	build/warptest beckmann 0.05
+	build/warptest beckmann 0.1
+	build/warptest beckmann 0.3
+The command "cd .. && python run_tests.py" exited with 1.
+
+Also, it appears that my implementation of Beckmann isn't working properly and this is also causing the build to fail.
+I wasn't able to fix these issues and make the build on Travis work, I apologize for that. Please let me know what I should do for next time.
+
+(Update: I commented the corresponding lines in run_tests.py so that the build can work).
+
+Monte Carlo Sampling (60 pts)
+=============================
+For the disk, sphere, uniform and cosine hemisphere I used the information and the code provided by the online book BPRT (specifically this page <a href="http://www.pbr-book.org/3ed-2018/Monte_Carlo_Integration/2D_Sampling_with_Multidimensional_Transformations.html" rel="stylesheet">this page </a>) and the slides of course about Light.
+Tent
+----
+
+<div class="twentytwenty-container">
+    <img src="tent_distrib.png" alt="Distribution">
+    <img src="tent.png" alt="Test">
+</div>
+
+You will find details about the integration and the inversion below.
+<div class="image-container">
+    <img src="tent_integral.jpg" alt="Tent">
+</div>
+
+Uniform disk
+------------
+<div class="twentytwenty-container">
+    <img src="disk_distrib.png" alt="Distribution">
+    <img src="disk.png" alt="Test">
+</div>
+
+Uniform sphere
+--------------
+
+<div class="twentytwenty-container">
+    <img src="sphere_distrib.png" alt="Distribution">
+    <img src="sphere.png" alt="Test">
+</div>
+
+Uniform hemisphere
+------------------
+
+<div class="twentytwenty-container">
+    <img src="hemisphere_uniform_distrib.png" alt="Distribution">
+    <img src="hemisphere_uniform.png" alt="Test">
+</div>
+
+Cosine hemisphere
+-----------------
+<div class="twentytwenty-container">
+    <img src="hemisphere_cos_distrib.png" alt="Distribution">
+    <img src="hemisphere_cos.png" alt="Test">
+</div>
+
+Beckmann distribution
+---------------------
+
+<div class="twentytwenty-container">
+    <img src="beckmann_distrib.png" alt="Distribution">
+    <img src="beckmann.png" alt="Test">
+</div>
+
+You will find details about the integration and the inversion below.
+<div class="image-container">
+    <img src="beckmann_integral.jpg" alt="beckmann">
+</div>
+
+Two simple rendering algorithms (40 pts)
+========================================
+
+Point lights
+------------
+
+This rendering function doesn't work properly. I am suspecting that the issue comes from the way I am making the ShadowRay queries.
+I think I didn't really understand how to make the query in the correct ray direction. Therefore, we can see in the resulting image that areas which should be shaded are appearing clear.
+
+Ajax bust illuminated by a point light source:
+<div class="twentytwenty-container">
+    <img src="ajax-simple-ref.png" alt="Reference">
+    <img src="ajax-simple.png" alt="Mine">
+</div>
+
+Ambient occlusion
+-----------------
+
+I had the same issue here, I didn't quite understand how to make the query in the direction of w.
+
+Ajax bust rendered using ambient occlusion:
+<div class="twentytwenty-container">
+    <img src="ajax-ao-ref.png" alt="Reference">
+    <img src="ajax-ao.png" alt="Mine">
+</div>
+
+
+Feedback
+========
+
+We would appreciate any comments or criticism to improve the projects in future years--naturally, this part will not be graded. Examples of information that is useful to us includes:
+
+* How much time did you spend on the assignment? How was it divided between designing, coding, and testing? Around 4 days. Late again, I apologize.
+* What advice should we have given you before you started? Not fear that the homework is going to be hard and start as soon as possible. In the end, I think this assignement was actually easier to do/understand that the homework 2.
+* What was hard or surprising about the assignment? I didn't quite understand some details in the integration, especially when changing the parametrization. Also I wasn't able to make the ShadowRay queries properly.
+* What did you like or dislike? What else would you change? Have the lab session earlier in the week to avoid getting stuck.
+
+<!--- Markdeep & image comparison library - probably no need to change anything below -->
+<style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="../resources/markdeep.min.js"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="../resources/jquery.event.move.js"></script>
+<script src="../resources/jquery.twentytwenty.js"></script>
+<link href="../resources/offcanvas.css" rel="stylesheet">
+<link href="../resources/twentytwenty.css" rel="stylesheet" type="text/css" />
+<script>
+$(window).load(function(){$(".twentytwenty-container").twentytwenty({default_offset_pct: 0.5});});
+</script>

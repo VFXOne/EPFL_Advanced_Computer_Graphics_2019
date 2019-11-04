@@ -1,0 +1,129 @@
+**Final Project Proposal**
+
+Student name: Virginie Piskin
+
+Sciper number: 300542
+
+
+Scene description and motivation
+================================
+
+1. Ideas
+
+The theme Unwanted Presents gave me the idea to render a scene which would display
+some enchanted or cursed objects. I like the idea that the objects seem deceivingly valuable at first
+but are really harmful for the owner.
+
+- The first idea is to create a scene around the Deathly Hallows (the elder wand, the resurrection stone and the invisibility cloak) from Harry Potter.
+- The second idea would be to create a scene around the ring from the lord of the rings.
+- The third idea would be to create a scene around the objects from fairy tails: the enchanted flower from Beauty and the Beast, the apple from Snow White and the needle from Sleeping Beauty.
+
+I decided to work with the first idea because it's the one I'm the most interested in but it might be a bit tricky to realize.
+This is why I have two back up plans. The second idea seems more interesting in terms of materials with the <a href="https://www.cgtrader.com/free-3d-models/military/other/the-one-ring" rel="stylesheet">ring</a> involving
+the rendering of gold and the engraved writing around the ring but I don't really have an good idea for the environment of the scene.
+The third idea has more content than the second one and seems more convinient as the objects are very basic (like a <a href="https://www.turbosquid.com/3d-models/free-obj-model-rose-lightwave-petal/777691" rel="stylesheet">rose</a> or an <a href="https://free3d.com/3d-model/apple-9433.html" rel="stylesheet">apple</a> for instance which can be a randomely modeled).
+Overall, I think the first idea might be a bit ambitious but the two others seem too simple and I would need to come up with more ideas to enrich the scene.
+
+2. Details
+
+<div class="image-container">
+    <img src="deathly_hallows.png" alt="deathly_hallows">
+</div>
+
+The deathly hallows are three objects from Harry Potter which are introduced in the story through <a href="https://www.pottermore.com/book-extract-long/a-lesson-on-the-hallows" rel="stylesheet">"The Tale of the Three Brothers"</a>.
+The elder wand is said to be unbeatable in combat, the resurrection stone is said to recall the dead and the invisibility cloak turns its wearer invisible (see pictures from the movie below).
+
+<div class="image-container">
+    <img src="harry_potter.jpg" alt="harry_potter">
+</div>
+
+The idea would be to display these three objects in the scene, on a table for instance.
+In terms of aestetics, I was really inspired by an image created in the previous
+years by Simon Kallweit in 2015. I like how sleek and neat this image looks mainly
+due to the symetry in the disposal of the objects and the simple background.
+
+<div class="image-container">
+    <img src="ETH_2015.png" alt="ETH_2015">
+</div>
+
+However, the main problem for my scene is the relative size of the objects and the lack of
+potential symetry which wouldn't give the same effect as Kallweit's image. Indeed, the wand and the ring would be very small compared to the cloak.
+
+I still believe I could make something similar to either of the two paintings below, by having the cloak folded to reduce the size difference.
+
+- Right Image - Philippe de Champaigne (1602-1674), Vanité: as Kallweit's image in the disposal of the objects this painting seems very neat even if the objects have different sizes. I also like the less modern look of the support table which would be better for the scene I would like to create.
+
+- Left Image - Elliot Gaudard - Vanités study: Even if this scene looks more messy I like the idea of the dark room and the narrow source of light. This scene also contains different types of objects with different textures just like the ones I would like to represent.
+
+<div class="image-container">
+    <img src="vanites.jpg" alt="vanites">
+</div>
+
+In terms of rendering challenges, I really like the fact that I will have 3 different materials to render: wood, stone (potentially gold if we include the ring) and cloth.
+The tricky one will be the cloak as it requires the material to be transparent from one side and texture with the cloak pattern on the other. Maybe, I could have the cloak
+partially folded so that we can see both sides. Or, if this is too difficult I could just model the textured side of the cloak.
+
+Another problem with this project is finding the 3D models for the objects (as they are not simple shapes and they come from books/movies):
+- The <a href="https://sketchfab.com/3d-models/the-elder-wand-efc7362a857749b3ae55fcbbba8baafb" rel="stylesheet">elder wand</a> was pretty easy to find and I think the model is very good.
+- I found two potential models for the stone which are decent, one with the <a href="https://3dwarehouse.sketchup.com/model/7b162cce1a44b5b6b07aa9a150fe00e1/Resurrection-Stone?hl=en" rel="stylesheet">ring</a> and one with just the <a href="https://www.cgtrader.com/3d-models/character/other/the-resurrection-stone" rel="stylesheet">stone</a>.
+- I wasn't able to find a good model for the cloak. However I was thinking I could use a random piece of <a href="https://free3d.com/3d-model/glass-bowl-and-cloth-5573.html" rel="stylesheet">cloth</a> for this.
+
+Feature list
+============
+
+<table>
+    <tr>
+        <th>Feature</th>
+        <th>Standard point count</th>
+        <th>Adjusted point count</th>
+    </tr>
+    <tr>
+        <td>Textures or Procedural images</td>
+        <td>10</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>Bump mapping / normal mapping</td>
+        <td>10</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>Depth of Field</td>
+        <td>10</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>Extra emitters</td>
+        <td>10</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>Mesh design / physical simulation</td>
+        <td>10</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>Cloth rendering</td>
+        <td>30</td>
+        <td>30</td>
+    </tr>
+    <tr>
+        <td><strong>Total</strong></td>
+        <td>80</td>
+        <td>80</td>
+    </tr>
+</table>
+
+I'm unsure weather I forgot to include any feature that might be useful for my project, for instance I don't know which feature I should choose to render the wand and the stone (Simple extra BSDFs maybe or Advanced extra BRDF/BSDFs?).
+Also, I'm not sure that implementing 5 features at 10 points each is a good strategy either but I think the features I chose are the most related to my project and I also don't want to dive into something too ambitious.
+
+<!--- Markdeep & image comparison library - probably no need to change anything below -->
+<style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="../resources/markdeep.min.js"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="../resources/jquery.event.move.js"></script>
+<script src="../resources/jquery.twentytwenty.js"></script>
+<link href="../resources/offcanvas.css" rel="stylesheet">
+<link href="../resources/twentytwenty.css" rel="stylesheet" type="text/css" />
+<script>
+$(window).load(function(){$(".twentytwenty-container").twentytwenty({default_offset_pct: 0.5});});
+</script>

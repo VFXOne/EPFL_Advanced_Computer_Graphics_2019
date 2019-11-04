@@ -1,0 +1,53 @@
+**Homework 1**
+
+Student name: Virginie Piskin
+
+Sciper number: 300542
+ 
+
+Feedback
+========
+
+This first assignment was pretty straight forward.
+Sometimes it would be nice to specify in which folders the files should be located, just to be sure we're not doing anything wrong.
+For instance, I saved `test.xml` in the `scenes/pa1` directory but I wasn't sure if I was supposed to.
+
+Exercise
+========
+
+Two simple scenes were generated in this first homework:
+
+* A test scene which consists in a green image as the color was set by default in the *normal* class.
+* A scene with a black background set by default in the *normal* class and a bunny using the 3D model contained in the `bunny.obj` file. 
+
+For both scenes, we can use the slider to change the camera exposure value:
+
+* test scene: the image goes from bright green to dark green and finally to black when we lower the camera exposure value.
+* bunny scene: at the highest camera exposure the bunny is entirely white whereas at the lowest camera exposure the bunny is black and fades into the background. The background doesn't change, it stays black. For an average camera exposure value we see that the bunny is randomely colored with green, blue and pink, which might indicate that the interaction with the light needs to be improved.
+
+Test
+----
+
+
+<div class="image-container">
+    <img src="test.png" alt="Test">
+</div>
+
+Bunny
+-----
+
+<div class="image-container">
+    <img src="bunny.png" alt="Bunny">
+</div>
+
+
+<!--- Markdeep & image comparison library - probably no need to change anything below -->
+<style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="../resources/markdeep.min.js"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="../resources/jquery.event.move.js"></script>
+<script src="../resources/jquery.twentytwenty.js"></script>
+<link href="../resources/offcanvas.css" rel="stylesheet">
+<link href="../resources/twentytwenty.css" rel="stylesheet" type="text/css" />
+<script>
+$(window).load(function(){$(".twentytwenty-container").twentytwenty({default_offset_pct: 0.5});});
+</script>
