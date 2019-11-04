@@ -1,4 +1,5 @@
 EPFL_Advanced_Computer_Graphics_2019
+
 EPFL Spring Semester 2019 - Advanced Computer Graphics Course
 
 Student name: Virginie Piskin
