@@ -27,7 +27,7 @@ and the projects and no solutions were provided for the assignments.
 - Assignment 4: Distribution and Whitted-style Ray Tracing (100 pts)
 - Assignment 5: Path Tracing, Microfacet Models, and Multiple Importance Sampling (100 pts)
 
-## Project
+## Content of the project
 
 | Feature Implemented   |  Resources used
 | --------------------: | ---------------------------------------------
